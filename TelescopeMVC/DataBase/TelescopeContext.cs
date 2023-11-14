@@ -1,6 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using System.Security.Cryptography.X509Certificates;
-using TelescopeMVC.Models.TelescopeApp.Models;
+using TelescopeMVC.Models;
 
 namespace TelescopeMVC.DataBase
 {
