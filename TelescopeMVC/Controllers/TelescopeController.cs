@@ -42,7 +42,7 @@ namespace TelescopeMVC.Controllers
                 return RedirectToAction("CreateTelescope");
             }
 
-            return View();
+            return View(telescope);
         }
 
         [HttpPost]
@@ -61,14 +61,16 @@ namespace TelescopeMVC.Controllers
                 telescope.Picture = imageData;
             }
 
+
+
             _context.Add(telescope);
 
             await _context.SaveChangesAsync();
 
-            return RedirectToAction("CreateTelescope");
-
             
 
+
+            return View(telescope);
            
         }
 
